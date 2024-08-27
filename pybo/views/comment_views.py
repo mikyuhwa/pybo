@@ -47,7 +47,7 @@ def comment_modify_question(request,comment_id):
 @login_required(login_url='common:login')
 def comment_delete_question(request, comment_id):
     """
-    
+
     pybo 질문삭제
     """
     comment = get_object_or_404(Comment, pk=comment_id)
